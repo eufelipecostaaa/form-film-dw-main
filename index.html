@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulario de filmes</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Formulario</h1>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#dados">Dados pessoais</a>
+                    </li>
+                    <li>
+                        <a href="#prefs">Preferencias</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form action="/dadospessoais" method="post" class="formulariodp">
+            <div class="formulariodp__titulo" id="dados">
+                <h2>Dados pessoais</h2>
+            </div>
+            <div class="formulariodp__campos">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Informe seu nome">
+            </div>
+            <div class="formulariodp__campos">
+                <label for="nome">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Informe seu email">
+            </div>
+            <div class="formulariodp__campos">
+                <label for="nome">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="Informe seu telefone">
+            </div>
+            <div class="formulariodp__campos">
+                <label for="nome">Data de nascimento:</label>
+                <input type="date" name="dnascimento" id="dnascimento">
+            </div>
+            <!--<div class="formulariodp__botoes">
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </div>-->
+        </form>
+        <form action="/preferencias" method="post" class="formulariopr">
+            <div class="formulariopr__titulo" id="prefs">
+                <h2>Preferencias</h2>
+            </div>
+            <div>
+                <h4>Qual voce prefere?</h4>
+
+                <div>
+                    <input type="radio" name="prefGen" id="prefGenFilme" value="filmes">
+                    <label for="prefGenFilme">Filmes</label>
+                </div>
+                <div>
+                    <input type="radio" name="prefGen" id="prefGenSerie" value="series">
+                    <label for="prefGenSerie">Series</label>
+                </div>
+                <div>
+                    <input type="radio" name="prefGen" id="prefGenDoc" value="documentarios">
+                    <label for="prefGenDoc">Documentarios</label>
+                </div>
+            </div>
+            <div class="generoFilme">
+                <h4>Selecione os seus generos favoritos</h4>
+                <div>
+                    <input type="checkbox" name="GeneroFilme" id="drama" value="drama">
+                    <label for="drama">Drama</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="GeneroFilme" id="acaoeaventura" value="acaoeaventura">
+                    <label for="acaoeaventura">Ação e aventura</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="GeneroFilme" id="comromantica" value="comromantica">
+                    <label for="comromantica">Comédia Romântica</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="GeneroFilme" id="ficcientifica" value="ficcientifica">
+                    <label for="ficcientifica">Ficção científica</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="GeneroFilme" id="teresuspense" value="teresuspense">
+                    <label for="teresuspense">Terror e suspense</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="GeneroFilme" id="fantasia" value="fantasia">
+                    <label for="fantasia">Fantasia</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="GeneroFilme" id="outros" value="outros">
+                    <label for="outros">Outros,quais?</label>
+                </div>
+                <div>
+                    <label for="outros"></label>
+                    <textarea name="outros" id="outros" cols="30" rows="10"></textarea>
+                </div>
+                <div class="formulariodp__botoes">
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>

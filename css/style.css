@@ -1,0 +1,105 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    background-color: black;
+    color: azure;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav li{
+    margin-right: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: azure;
+}
+
+.formulariodp{
+    width: 40%;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(231, 213, 252);
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulariodp__titulo{
+    text-align: center;
+}
+
+.formulariodp__campos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+.formulariodp__campos input{
+    background-color: rgb(244, 229, 247);
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+.formulariodp__campos input,input::placeholder{
+    color: rgb(74, 113, 197);
+}
+
+.formulariodp__botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.formulariodp__botoes button{
+    height: 25px;
+    width: 70px;
+    background-color: rgb(207, 176, 236);
+    border: none;
+    border-radius: 5px;
+    color: blueviolet;
+}
+
+.formulariodp__botoes button:hover{
+    background-color: rgb(140, 105, 206);
+}
+
+.formulariopr{
+    width: 40%;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(231, 213, 252);
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulariopr__titulo{
+    text-align: center;
+}
+
+.formulariopr__campos input,textarea{
+    background-color: rgb(244, 229, 247);
+    resize: none;
+}
